@@ -70,7 +70,7 @@ mkdir -p ~/.local/bin
 mv ./kubectl ~/.local/bin/kubectl
 kubectl version --client
 ````
-### $\color{orange}{Step 3 → IAM \ Role \for \ EC2}$
+### $\color{orange}{Step 3 → IAM \ Role \ for \ EC2}$
 create role:
 ![role](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/31a05c18-f34b-430d-b5cb-c5873ae6e9c5)
 
