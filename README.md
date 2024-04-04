@@ -1,5 +1,5 @@
 
-##  $\color{blue}{Project  Workflow}$
+##  $\color{blue}{Project \ Workflow}$
 Step 1 → Login and basics setup
 
 Step 2 → Setup Docker ,Terraform ,aws cli , and Kubectl
