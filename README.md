@@ -1,5 +1,5 @@
 # $\color{lightblue}{Project \space \color{red} Super \space  \color{orange} Mario \ Bros }$
-##  $\color{blue}{Project \ Workflow}$
+##  $\color{yellow}{Project \ Workflow}$
 Step 1 → Login and basics setup
 
 Step 2 → Setup Docker ,Terraform ,aws cli , and Kubectl
@@ -25,14 +25,14 @@ Step 6 → Creation of deployment and service for EKS
 ````
 sudo apt update -y
 ````
-$\color{lightblue}{Setup \ Docker:}$
+$\color{yellow}{Setup \ Docker:}$
 ````
 sudo apt install docker.io
 sudo usermod -aG docker $USER
 newgrp docker
 docker --version
 ````
-$\color{lightblue}{Setup \ Terraform:}$
+$\color{yellow}{Setup \ Terraform:}$
 ````
 sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
 
@@ -53,7 +53,7 @@ sudo apt-get install terraform
 terraform --version
 
 ````
-$\color{lightblue}{Setup \ AWS \ cli:}$
+$\color{yellow}{Setup \ AWS \ CLI:}$
 ````
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 sudo apt install unzip 
@@ -62,7 +62,7 @@ sudo ./aws/install
 aws --version
 
 ````
-$\color{lightblue}{Setup \ Kubectl:}$
+$\color{yellow}{Setup \ Kubectl:}$
 ````
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 chmod +x kubectl
@@ -83,7 +83,7 @@ click on actions → security → modify IAM role option
 ![modify-role](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/3e998e21-3654-43b0-8df0-496f009ef0a6)
 
 ### $\color{orange}{Step 5 → Building \ Infrastructure \ Using \ terraform}$
-$\color{green}{Install git}$
+$\color{yellow}{Install \ GIT}$
 ````
 sudo apt install git -y
 git clone https://github.com/abhipraydhoble/Project-Super-Mario.git
