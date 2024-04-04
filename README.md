@@ -14,13 +14,13 @@ Step 6 → Creation of deployment and service for EKS
 
 
 
-### Step 1 → Login and basics setup:
+### $\color{orange}{Step 1 → Login and basics setup}$
 1. Click on launch Instance
    ![instance](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/5fe51373-eaac-4f7c-9669-34c578277051)
 2. Connect to EC2-Instance
    ![connect-ec2](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/9d518e77-6f65-4153-acfc-790a6eaf669a)
 
-### Step 2 → Setup Docker ,Terraform ,aws cli , and Kubectl
+### $\color{orange}{Step 2 → Setup Docker ,Terraform ,aws cli , and Kubectl}S
 
 ````
 sudo apt update -y
@@ -70,11 +70,11 @@ mkdir -p ~/.local/bin
 mv ./kubectl ~/.local/bin/kubectl
 kubectl version --client
 ````
-### Step 3 → IAM Role for EC2
+### $\color{orange}{Step 3 → IAM Role for EC2}$
 create role:
 ![role](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/31a05c18-f34b-430d-b5cb-c5873ae6e9c5)
 
-### Step 4 →Attach IAM role with your EC2
+### $\color{orange}{Step 4 →Attach IAM role with your EC2}S
 go to EC2 
 click on actions → security → modify IAM role option
 
@@ -82,7 +82,7 @@ click on actions → security → modify IAM role option
 
 ![modify-role](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/3e998e21-3654-43b0-8df0-496f009ef0a6)
 
-### Step 5 → Building Infrastructure Using terraform
+### $\color{orange}{Step 5 → Building Infrastructure Using terraform}$
 Install git
 ````
 sudo apt install git -y
@@ -102,7 +102,7 @@ terraform apply --auto-approve
 aws eks update-kubeconfig --name EKS_CLOUD --region ap-south-1
 ````
 
-### Step 6 → Creation of deployment and service for EKS
+### $\color{orange}{Step 6 → Creation of deployment and service for EKS}$
 change the directory where deployment and service files are stored use the command →
 ````
 cd ..
