@@ -1,5 +1,5 @@
 
-## Project Workflow
+##  $\color{sky blue}{Project Workflow}$
 Step 1 → Login and basics setup
 
 Step 2 → Setup Docker ,Terraform ,aws cli , and Kubectl
@@ -93,7 +93,7 @@ vim backend.tf
 ````
 ![backend tf](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/6b9e648f-2f13-41e8-a66b-6b6e6e0a63de)
 
-Deploy:
+Create Infra:
 ````
 terraform init
 terraform validate
