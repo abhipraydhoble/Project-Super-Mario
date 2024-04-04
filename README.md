@@ -20,7 +20,7 @@ Step 6 → Creation of deployment and service for EKS
 2. Connect to EC2-Instance
    ![connect-ec2](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/9d518e77-6f65-4153-acfc-790a6eaf669a)
 
-### $\color{orange}{Step 2 → Setup Docker Terraform aws cli and Kubectl}S
+### $\color{orange}{Step 2 → Setup Tools}$
 
 ````
 sudo apt update -y
