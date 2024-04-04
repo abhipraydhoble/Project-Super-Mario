@@ -25,7 +25,7 @@ Step 6 → Creation of deployment and service for EKS
 ````
 sudo apt update -y
 ````
-$\color{green}{Setup Docker:}$
+$\color{lightgreen}{Setup Docker:}$
 ````
 sudo apt install docker.io
 sudo usermod -aG docker $USER
