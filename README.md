@@ -12,7 +12,7 @@ Step 5 → Building Infrastructure Using terraform
 
 Step 6 → Creation of deployment and service for EKS
 
-Step 7 → Destroy all the Insrastructure
+
 
 ### Step 1 → Login and basics setup:
 1. Click on launch Instance
@@ -70,3 +70,57 @@ mkdir -p ~/.local/bin
 mv ./kubectl ~/.local/bin/kubectl
 kubectl version --client
 ````
+### Step 3 → IAM Role for EC2
+create role:
+![role](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/31a05c18-f34b-430d-b5cb-c5873ae6e9c5)
+
+### Step 4 →Attach IAM role with your EC2
+go to EC2 
+click on actions → security → modify IAM role option
+
+![role-ec2](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/70cc0ebb-6063-4c4b-98df-7259a08749b8)
+
+![modify-role](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/3e998e21-3654-43b0-8df0-496f009ef0a6)
+
+### Step 5 → Building Infrastructure Using terraform
+Install git
+````
+sudo apt install git -y
+git clone https://github.com/abhipraydhoble/Project-Super-Mario.git
+cd Project-Super-Mario
+cd EKS-TF
+vim backend.tf
+````
+![backend tf](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/6b9e648f-2f13-41e8-a66b-6b6e6e0a63de)
+
+Deploy:
+````
+terraform init
+terraform validate
+terraform plan
+terraform apply --auto-approve
+aws eks update-kubeconfig --name EKS_CLOUD --region ap-south-1
+````
+
+### Step 6 → Creation of deployment and service for EKS
+change the directory where deployment and service files are stored use the command →
+````
+cd ..
+````
+create the deployment
+````
+kubectl apply -f deployment.yaml
+````
+Now create the service
+````
+kubectl apply -f service.yaml
+kubectl get all
+kubectl describe service mario-service
+````
+copy the load balancer ingress and paste it on browser and your game is running
+
+![load balancer](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/d085951d-3398-44ad-b9cd-05c561b74664)
+
+Final Output:
+
+![output](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/edfff0b5-6507-48e4-b552-908671b59920)
