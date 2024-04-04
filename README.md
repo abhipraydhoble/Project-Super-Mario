@@ -25,14 +25,14 @@ Step 6 → Creation of deployment and service for EKS
 ````
 sudo apt update -y
 ````
-$\color{lightgreen}{Setup Docker:}$
+$\color{lightblue}{Setup \ Docker:}$
 ````
 sudo apt install docker.io
 sudo usermod -aG docker $USER
 newgrp docker
 docker --version
 ````
-$\color{green}{Setup Terraform:}$
+$\color{lightblue}{Setup \ Terraform:}$
 ````
 sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
 
@@ -53,7 +53,7 @@ sudo apt-get install terraform
 terraform --version
 
 ````
-$\color{green}{Setup AWS cli:}$
+$\color{lightblue}{Setup \ AWS \ cli:}$
 ````
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 sudo apt install unzip 
@@ -62,7 +62,7 @@ sudo ./aws/install
 aws --version
 
 ````
-$\color{green}{Setup Kubectl:}$
+$\color{lightblue}{Setup \ Kubectl:}$
 ````
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 chmod +x kubectl
