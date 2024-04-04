@@ -25,14 +25,14 @@ Step 6 → Creation of deployment and service for EKS
 ````
 sudo apt update -y
 ````
-Setup Docker:
+$\color{green}{Setup Docker:}$
 ````
 sudo apt install docker.io
 sudo usermod -aG docker $USER
 newgrp docker
 docker --version
 ````
-Setup Terraform:
+$\color{green}{Setup Terraform:}$
 ````
 sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
 
@@ -53,7 +53,7 @@ sudo apt-get install terraform
 terraform --version
 
 ````
-Setup AWS cli:
+$\color{green}{Setup AWS cli:}$
 ````
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 sudo apt install unzip 
@@ -62,7 +62,7 @@ sudo ./aws/install
 aws --version
 
 ````
-Setup Kubectl:
+$\color{green}{Setup Kubectl:}$
 ````
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 chmod +x kubectl
@@ -83,7 +83,7 @@ click on actions → security → modify IAM role option
 ![modify-role](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/3e998e21-3654-43b0-8df0-496f009ef0a6)
 
 ### $\color{orange}{Step 5 → Building \ Infrastructure \ Using \ terraform}$
-Install git
+$\color{green}{Install git}$
 ````
 sudo apt install git -y
 git clone https://github.com/abhipraydhoble/Project-Super-Mario.git
