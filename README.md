@@ -97,6 +97,8 @@ create role:
 ### $\color{red}{Step 4 →Attach \ IAM \ role \ with \ your \ EC2 }$
 go to EC2 
 click on actions → security → modify IAM role option
+- administrator access
+- eks
 
 ![role-ec2](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/70cc0ebb-6063-4c4b-98df-7259a08749b8)
 
@@ -140,6 +142,9 @@ kubectl describe svc mario-service
 copy the load balancer ingress and paste it on browser and your game is running
 
 ![load balancer](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/d085951d-3398-44ad-b9cd-05c561b74664)
+
+
+
 
 $\color{green}{Final \ Output:}$
 
