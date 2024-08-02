@@ -128,7 +128,7 @@ terraform init
 terraform validate
 terraform plan
 terraform apply --auto-approve
-aws eks update-kubeconfig --name EKS_CLOUD --region ap-south-1
+aws eks update-kubeconfig --name Mario-Bros-EKS --region ap-south-1
 ````
 
 ### $\color{red}{Step 6 → Creation \ of \ deployment \ and \ service \ for \ EKS}$
