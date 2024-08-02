@@ -149,3 +149,9 @@ copy the load balancer ingress and paste it on browser and your game is running
 $\color{green}{Final \ Output:}$
 
 ![output](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/edfff0b5-6507-48e4-b552-908671b59920)
+
+
+**delete eks cluster**
+````
+eksctl delete cluster --name 34-ekscluster --region ap-south-1
+````
