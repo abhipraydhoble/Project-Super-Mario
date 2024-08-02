@@ -1,4 +1,4 @@
-# $$\color{lightblue}{Project: \space \color{red} Super \space  \color{orange} Mario \ Bros }$$
+# $$\color{lightblue}{\textbf Project: \ \color{red} \textbf Super \ \color{orange} \textbf Mario \ \textbf Bros }$$
 ##  $\color{blue}{Project \ Workflow}$
 Step 1 → Login and basics setup
 
