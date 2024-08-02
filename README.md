@@ -70,6 +70,35 @@ mkdir -p ~/.local/bin
 mv ./kubectl ~/.local/bin/kubectl
 kubectl version --client
 ````
+
+or
+## Install kubectl
+Download the latest release with the command:
+````
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+````
+Validate the binary 
+````
+ curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
+````
+Validate the kubectl binary against the checksum file:
+````
+echo "$(cat kubectl.sha256)  kubectl" | sha256sum --check
+````
+Install kubectl:
+````
+sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+````
+Note:
+If you do not have root access on the target system, you can still install kubectl to the ~/.local/bin directory:
+````
+chmod +x kubectl
+mkdir -p ~/.local/bin
+mv ./kubectl ~/.local/bin/kubectl
+````
+````
+kubectl version --client
+````
 ### $\color{red}{Step 3 → IAM \ Role \ for \ EC2}$
 create role:
 ![role](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/31a05c18-f34b-430d-b5cb-c5873ae6e9c5)
