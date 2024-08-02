@@ -62,16 +62,7 @@ sudo ./aws/install
 aws --version
 
 ````
-$\color{blue}{Setup \ Kubectl:}$
-````
-curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
-chmod +x kubectl
-mkdir -p ~/.local/bin
-mv ./kubectl ~/.local/bin/kubectl
-kubectl version --client
-````
 
-or
 ## Install kubectl
 Download the latest release with the command:
 ````
@@ -128,7 +119,7 @@ terraform init
 terraform validate
 terraform plan
 terraform apply --auto-approve
-aws eks update-kubeconfig --name Mario-Bros-EKS --region ap-south-1
+aws eks update-kubeconfig --name EKS_CLOUD --region ap-south-1
 ````
 
 ### $\color{red}{Step 6 → Creation \ of \ deployment \ and \ service \ for \ EKS}$
