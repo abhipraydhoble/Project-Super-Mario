@@ -144,6 +144,12 @@ copy the load balancer ingress and paste it on browser and your game is running
 ![load balancer](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/d085951d-3398-44ad-b9cd-05c561b74664)
 
 
+**Delete Infra**
+````
+ terraform destroy -auto-approve
+````
+
+
 
 
 $\color{green}{Final \ Output:}$
