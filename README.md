@@ -106,7 +106,7 @@ click on actions → security → modify IAM role option
 ![modify-role](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/3e998e21-3654-43b0-8df0-496f009ef0a6)
 
 ### $\color{red} \textbf {Step 5 → Building Infrastructure  Using  terraform}$
-$\color{blue}{Install \ GIT}$
+$\color{blue} \textbf {Install  GIT}$
 ````
 sudo apt install git -y
 git clone https://github.com/abhipraydhoble/Project-Super-Mario.git
