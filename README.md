@@ -15,25 +15,25 @@ Step 6 → Creation of deployment and service for EKS
 
 
 
-### $$\color{red} \textbf {Step 1 → Login  and  basics  setup}$$
+### $\color{red} \textbf {Step 1 → Login  and  basics  setup}$
 1. Click on launch Instance
    ![instance](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/5fe51373-eaac-4f7c-9669-34c578277051)
 2. Connect to EC2-Instance
    ![connect-ec2](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/9d518e77-6f65-4153-acfc-790a6eaf669a)
 
-### $$\color{red} \textbf {Step 2 → Setup  Tools}$$
+### $\color{red} \textbf {Step 2 → Setup  Tools}$
 
 ````
 sudo apt update -y
 ````
-$\color{blue}{Setup \ Docker:}$
+$\color{blue} \textbf {Setup  Docker:}$
 ````
 sudo apt install docker.io
 sudo usermod -aG docker ubuntu
 newgrp docker
 docker --version
 ````
-$$\color{blue} \textbf {Setup Terraform:}$$
+$\color{blue} \textbf {Setup Terraform:}$
 ````
 sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
 
@@ -54,7 +54,7 @@ sudo apt-get install terraform
 terraform --version
 
 ````
-$\color{blue} \textbf {Setup  AWS CLI:}$
+${\color{blue} \textbf {Setup  AWS CLI:}}$
 ````
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 sudo apt install unzip 
@@ -64,7 +64,7 @@ aws --version
 
 ````
 
-## $\color{blue} \textbf {Install kubectl}}$
+## ${\color{blue} \textbf {Install kubectl}}$
 Download the latest release with the command:
 ````
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
