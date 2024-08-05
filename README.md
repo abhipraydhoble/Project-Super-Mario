@@ -138,7 +138,7 @@ $\color{blue} \textbf {Now create  the service}$
 ````
 kubectl apply -f service.yaml
 kubectl get all
-kubectl describe svc mario-service
+kubectl get svc mario-service
 ````
 copy the load balancer ingress and paste it on browser and your game is running
 
