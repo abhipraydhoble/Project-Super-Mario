@@ -125,8 +125,12 @@ terraform plan
 terraform apply --auto-approve
 aws eks update-kubeconfig --name EKS_CLOUD --region ap-south-1
 ````
+or
+````
+aws eks update-kubeconfig --name EKS_CLOUD --profile eks
+````
 
-### $\color{red} \textbf {Step 6 → Creation  of  deployment  and  service  for  EKS}$
+### $\color{red} \textbf {Step 6 → Creation  of  deployment  and service  for  EKS}$
 change the directory where deployment and service files are stored use the command →
 ````
 cd ..
