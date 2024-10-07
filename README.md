@@ -125,10 +125,9 @@ vim backend.tf
 $\color{blue} \textbf {Create \ Infra:}$
 ````
 terraform init
-terraform validate
 terraform plan
 terraform apply --auto-approve
-aws eks update-kubeconfig --name EKS_CLOUD --region ap-south-1
+aws eks update-kubeconfig --name EKS_CLOUD --region ap-southeast-1
 ````
 or
 ````
