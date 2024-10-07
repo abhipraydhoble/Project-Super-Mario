@@ -20,9 +20,7 @@ Step 6 → Creation of deployment and service for EKS
    ![instance](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/5fe51373-eaac-4f7c-9669-34c578277051)
 2. Connect to EC2-Instance
    ![connect-ec2](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/9d518e77-6f65-4153-acfc-790a6eaf669a)
-3. Create IAM Role having below permissions:
-   ![image](https://github.com/user-attachments/assets/c460fb68-75f1-490d-a824-2a3af4ce70aa)
-   ![image](https://github.com/user-attachments/assets/c23f9d00-505d-4a0d-b07d-c6b21d419748)
+
    
 5. Attach role to ec2 instance
 
@@ -106,6 +104,7 @@ go to EC2
 click on actions → security → modify IAM role option
 - administrator access
 - eks
+![image](https://github.com/user-attachments/assets/c23f9d00-505d-4a0d-b07d-c6b21d419748)
 
 ![role-ec2](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/70cc0ebb-6063-4c4b-98df-7259a08749b8)
 
