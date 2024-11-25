@@ -126,11 +126,10 @@ $\color{blue} \textbf {Create \ Infra:}$
 terraform init
 terraform plan
 terraform apply --auto-approve
-aws eks update-kubeconfig --name EKS_CLOUD --region ap-southeast-1
 ````
-or
+
 ````
-aws eks update-kubeconfig --name EKS_CLOUD --profile eks
+aws eks update-kubeconfig --name EKS_CLOUD --region ap-southeast-1 --profile eks
 ````
 
 ### $\color{red} \textbf {Step 6 → Creation  of  deployment  and service  for  EKS}$
