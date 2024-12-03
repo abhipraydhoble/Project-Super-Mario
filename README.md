@@ -31,7 +31,7 @@ sudo apt update -y
 ````
 $\color{blue} \textbf {Setup  Docker:}$
 ````
-sudo apt install docker.io
+sudo apt install docker.io -y
 sudo systemctl start docker
 sudo usermod -aG docker ubuntu
 newgrp docker
