@@ -106,10 +106,13 @@ click on actions → security → modify IAM role option
 ### $\color{red} \textbf {Step 5 → Building Infrastructure  Using  terraform}$
 $\color{blue} \textbf {Install  GIT}$
 ````
-sudo apt install git -y
 git clone https://github.com/abhipraydhoble/Project-Super-Mario.git
+````
+````
 cd Project-Super-Mario
 cd EKS-TF
+````
+````
 vim backend.tf
 ````
 ![backend tf](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/6b9e648f-2f13-41e8-a66b-6b6e6e0a63de)
