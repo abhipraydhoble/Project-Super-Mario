@@ -1,7 +1,8 @@
 terraform {
   backend "s3" {
-    bucket = "project-mario-bros-bucket" # Replace with your actual S3 bucket name
+    bucket = "super-mario-tf-kubernetes-project" # Replace with your actual S3 bucket name
     key    = "EKS/terraform.tfstate"
-    region = "ap-south-1"
+    region = "ap-southeast-1"
+    profile = "eks"
   }
 }
