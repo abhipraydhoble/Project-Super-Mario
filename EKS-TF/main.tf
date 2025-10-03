@@ -125,7 +125,7 @@ resource "aws_eks_node_group" "example" {
   }
 
   # EC2 instance type for worker nodes
-  instance_types = ["t2.medium"]
+  instance_types = ["t3.medium"]
 
   # Ensure IAM Role policies are created before node group
   depends_on = [
