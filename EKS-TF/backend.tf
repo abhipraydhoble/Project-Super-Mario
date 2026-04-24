@@ -1,3 +1,4 @@
+/*
 terraform {
   backend "s3" {
     bucket = "oncdecb36-terraform-backend" # Replace with your actual S3 bucket name
@@ -6,3 +7,4 @@ terraform {
     profile = "eks"
   }
 }
+*/
