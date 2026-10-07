@@ -5,7 +5,6 @@ Step 1 → Login and basics setup
 
 Step 2 → Setup Docker ,Terraform ,aws cli , and Kubectl
 
-Step 3 → IAM Role for EC2
 
 Step 5 → Building Infrastructure Using terraform
 
